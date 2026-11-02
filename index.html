@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descubra seu caminho no Front-End</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body class="tema-claro">
+    <header class="cabecalho">
+        <div class="container container-header">
+            <h1>Descubra seu caminho no Front-End</h1>
+            <button id="btn-tema" class="btn btn-secundario" type="button">Alternar Tema</button>
+        </div>
+    </header>
+
+    <main class="principal">
+        <section class="card container">
+            <form id="form-orientacao" class="formulario">
+                <div class="campo">
+                    <label for="nome-usuario">Qual é o seu nome?</label>
+                    <input type="text" id="nome-usuario" placeholder="Digite seu nome completo ou apelido"
+                        autocomplete="off">
+                </div>
+
+                <div class="campo">
+                    <label for="area-interesse">Selecione sua área de foco principal:</label>
+                    <select id="area-interesse">
+                        <option value="">Selecione uma opção...</option>
+                        <option value="html">HTML</option>
+                        <option value="css">CSS</option>
+                        <option value="javascript">JavaScript</option>
+                    </select>
+                </div>
+
+                <button id="btn-gerar" class="btn btn-primario" type="button">
+                    Gerar Orientação
+                </button>
+            </form>
+
+            <div id="painel-resultado" class="resultado oculto" aria-live="polite">
+                <p id="texto-resultado"></p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="container">
+            <p>&copy; 2026 Descubra seu caminho no Front-End — Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
